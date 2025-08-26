@@ -21,24 +21,27 @@ body {
     color: #5C6AC4;
 }
 
-.header-logo {
+.header-links {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     color: white;
-    display: flex;
+    display: flex; /* Use Flexbox */
     align-items: center;
-    padding-left: 15px;
+    justify-content: flex-end;
+    padding-right: 15px;
     box-sizing: border-box;
     z-index: 1000;
     padding: 20px;
+    text-align: center;
+    gap: 15px; /* Add spacing between items */
 }
 
-.header-logo img {
-    width: 15%;
+.header-links img {
+    width: 25%;
     height: auto;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     backdrop-filter: blur(5px);
 }
 
@@ -275,3 +278,4 @@ body {
   resize: vertical;
 
 }
+
