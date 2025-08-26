@@ -57,13 +57,13 @@ body {
     padding-right: 15px;
     box-sizing: border-box;
     z-index: 1000;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .header-links img {
-    width: 25%;
+    width: 35%;
     height: auto;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
@@ -274,6 +274,7 @@ body {
   resize: vertical;
 
 }
+
 
 
 
