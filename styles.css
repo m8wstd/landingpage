@@ -46,6 +46,7 @@ body {
 }
 
 .header-logo {
+    max-width: 150px;
     position: fixed;
     top: 0;
     left: 0;
@@ -275,5 +276,6 @@ body {
   resize: vertical;
 
 }
+
 
 
