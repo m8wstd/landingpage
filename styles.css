@@ -16,9 +16,34 @@ body {
     color: white;
 }
 
-
 .title {
     color: #5C6AC4;
+}
+
+.header-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    box-sizing: border-box;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.header-logo img {
+    width: 15%;
+    height: auto;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.header-logo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .header-links {
@@ -43,33 +68,6 @@ body {
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     backdrop-filter: blur(5px);
-}
-
-.header-logo {
-    max-width: 150px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    box-sizing: border-box;
-    z-index: 1000;
-    padding: 20px;
-}
-
-.header-logo img {
-    width: 15%;
-    height: auto;
-    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    backdrop-filter: blur(5px);
-}
-
-.header-logo img:hover {
-    transform: scale(1.1);
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .header-links img:hover {
@@ -276,6 +274,7 @@ body {
   resize: vertical;
 
 }
+
 
 
 
