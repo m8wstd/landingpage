@@ -63,7 +63,7 @@ body {
 }
 
 .header-links img {
-    width: 50%;
+    width: 25%;
     height: auto;
     padding: 20px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
@@ -273,4 +273,5 @@ body {
   border: 1px solid #ccc;
   font-size: 15px;
   resize: vertical;
+
 }
