@@ -172,23 +172,6 @@ body p {
     margin: 0;
 }
 
-@media (max-width: 850px) {
-    .highlight-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .highlight-item-img {
-        flex: 0 0 auto;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .highlight-item-text {
-        text-align: center;
-    }
-}
-
 .contact {
     width: 100%;
     background-color: #1a2235;
@@ -318,7 +301,28 @@ body p {
     .highlight-item-img {
         max-width: 100%;
     }
-    
+    .highlight-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .highlight-item-img {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    .highlights-content h1 {
+        font-size: 32px;
+    }
+    .highlight-item-text h2 {
+        font-size: 20px;
+    }
+    .highlight-item-text p {
+        font-size: 16px;
+    }
+
+    .contact-content h1 {
+        font-size: 30px;
+    }
     .btn {
         width: 100%;
         box-sizing: border-box; 
