@@ -1,16 +1,22 @@
-# React + Vite
+# Maxwell M8W - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é a minha landing page pessoal, refatorada para uma arquitetura moderna utilizando **React**, **Vite** e **Tailwind CSS**. 
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**: Biblioteca para construção da interface.
+- **Vite**: Build tool extremamente rápida para o desenvolvimento frontend.
+- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e responsiva.
+- **Google Fonts (Inter)**: Tipografia moderna e legível.
+- **GitHub Pages**: Hospedagem simplificada para projetos estáticos.
 
-## React Compiler
+## 🛠️ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Design Responsivo**: Adaptado para dispositivos móveis e desktops.
+- **Interatividade**: Efeitos de hover e animações suaves.
+- **Integração de Áudio**: Feedback sonoro ao interagir com elementos da página.
+- **Seção de Portfólio**: Destaques de projetos com links externos.
+- **Contato Dinâmico**: Botões de WhatsApp e E-mail integrados.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+Desenvolvido por **Maxwell Fernandes** 🚀
