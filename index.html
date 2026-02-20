@@ -1,96 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/images/m8wlogo.svg" type="image/svg+xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maxwell M8W</title>
-  <link rel="icon" href="./images/m8wlogo.svg" type="image/svg+xml">
-  <link rel="script" href="script.js">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <div class="main">
-    
-    <div class="photo">
-      <img src="./images/foto_maxwell.jpg" alt="Foto de Maxwell" onclick="playPhotoSound()" />
-      <audio id="clickSound2" src="./audio/ouch.mp3" preload="auto"></audio>
-    </div>
-
-    <div class="content">
-      <h1>Maxwell Fernandes</h1>
-      <h2>Desenvolvedor Full Stack</h2>
-      <p>😃Oi! Meu nome é Maxwell Fernandes e sou um desenvolvedor full-stack, focado em desenvolver aplicações para web/mobile em React. 
-      Também tenho trabalhado com desenvolvimento de jogos digitais.<br>
-      Atualmente curso Sistemas de Informação na UVV (2025/1).</p>
-
-      <div class="social">
-          <img src="./images/m8wlogo.svg" alt="M8W Logo">
-          <a href="https://discord.com/users/381868391671136258" target="_blank"><img src="./images/discord.svg" alt="Discord" /></a>
-          <a href="https://github.com/m8wstd" target="_blank"><img src="./images/github.svg" alt="GitHub" /></a>
-          <a href="https://www.instagram.com/maxwellm8w/" target="_blank"><img src="./images/instagram.svg" alt="Instagram" /></a>
-          <a href="https://www.linkedin.com/in/maxwellm8w/" target="_blank"><img src="./images/linkedin.svg" alt="Linkedin" /></a>
-      </div>
-
-    </div>
-  
-  </div>
-
-  <div class="highlights">
-    <div class="highlights-content">
-      <h1>Destaques</h1>
-      <div class="highlight-item">
-        <div class="highlight-item-img">
-          <img src="./images/game_gif.gif" alt="Gif Jogo BadApple">
-        </div>
-        <div class="highlight-item-text">
-        <h2>Jogo no Scratch: BadApple!</h2>
-        <p>Jogo em Scratch inspirado no video clipe da música "BadApple!!", onde programei e produzi a música e a arte.</p>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-item-img">
-          <img src="./images/fortes.png" alt="Fortes Site Imagem">
-        </div>
-        <div class="highlight-item-text">
-          <h2>Site para Fortes Engenharia</h2>
-          <p>Um site para a empresa Fortes, onde tem o objetivo de reunir recicladores e produtores de lixo em um só lugar.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact">
-  <div class="contact-content">
-    
-    <h1>Contate-me!</h1>
-    
-    <p>Quer desenvolver alguma coisa e precisa de ajuda?<br>
-    É só me mandar mensagem!</p>
-      
-    <a href="https://wa.me/5527974002669" class="btn">
-      
-      <img src="./images/whatsapp.svg" alt="WhatsApp" class="btn-icon">
-      
-      <span>+55 27 97400-2669</span>
-    
-    </a>
-
-    <a href="mailto:maxwellfercar@gmail.com" class="btn">
-      
-      <img src="./images/mail.svg" alt="Email" class="btn-icon">
-      
-      <span>maxwellfercar@gmail.com</span>
-    
-    </a>
-
-  </div>
-</div>
-  
-  <script src="script.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
-
 
 </html>
