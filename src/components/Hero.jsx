@@ -24,9 +24,9 @@ const Hero = () => {
       </div>
 
       <div className="content flex flex-col text-center md:text-left">
-        <h1 className="text-5xl font-extrabold text-[#47b8ec] mb-2 leading-tight">Maxwell Fernandes</h1>
-        <h2 className="text-3xl font-bold text-[#47b8ec] mb-5 leading-tight">Desenvolvedor de Software</h2>
-        <p className="text-2xl text-white/70 mb-8 leading-relaxed">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-[#47b8ec] mb-2 leading-tight">Maxwell Fernandes</h1>
+        <h2 className="text-xl md:text-3xl font-bold text-[#47b8ec] mb-5 leading-tight">Desenvolvedor de Software</h2>
+        <p className="text-lg md:text-2xl text-white/70 mb-8 leading-relaxed">
           <span className="text-white">😃</span>Oi! Meu nome é Maxwell e sou desenvolvedor de software.<br />
           Tenho trabalhado com desenvolvimento de jogos digitais e aplicações web/mobile.<br/>
           Atualmente curso Sistemas de Informação na UVV (2025/1).
