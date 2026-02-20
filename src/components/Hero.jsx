@@ -15,10 +15,10 @@ const Hero = () => {
     <div className="main flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto pt-12 mb-12 px-4">
       <div className="photo mb-8 md:mb-0 md:mr-12 flex-shrink-0">
         <img 
-          src="./images/foto_maxwell.jpg" 
+          src="./images/foto_maxwell.jpeg" 
           alt="Foto de Maxwell" 
           onClick={playPhotoSound} 
-          className="w-64 h-auto rounded-full transition-transform duration-300 hover:scale-110 cursor-pointer shadow-lg"
+          className="w-64 aspect-square object-cover rounded-full transition-transform duration-300 hover:scale-110 cursor-pointer shadow-lg"
         />
         <audio id="clickSound2" src="./audio/ouch.mp3" preload="auto"></audio>
       </div>
