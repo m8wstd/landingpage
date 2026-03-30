@@ -2,9 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const Hero = () => {
+const GameDevHero = () => {
   const { t } = useTranslation();
-
   const playPhotoSound = () => {
     const audio = document.getElementById('clickSound2');
     if (audio) {
@@ -29,12 +28,12 @@ const Hero = () => {
 
       <div className="content flex flex-col text-center md:text-left">
         <h1 className="text-3xl md:text-5xl font-extrabold text-[#47b8ec] mb-2 leading-tight">Maxwell Fernandes</h1>
-        <h2 className="text-xl md:text-3xl font-bold text-[#47b8ec] mb-5 leading-tight">{t("hero.subtitle")}</h2>
-        <p className="text-lg md:text-2xl text-white/70 mb-8 leading-relaxed" dangerouslySetInnerHTML={{ __html: t("hero.desc") }} />
+        <h2 className="text-xl md:text-3xl font-bold text-[#47b8ec] mb-5 leading-tight">{t("gamedev_hero.subtitle")}</h2>
+        <p className="text-lg md:text-2xl text-white/70 mb-8 leading-relaxed" dangerouslySetInnerHTML={{ __html: t("gamedev_hero.desc") }} />
 
         <div>
           <p className="text-sm md:text-sm text-white/70 mb-8 leading-relaxed underline">
-            <Link to="/gamedev">{t("hero.link")}</Link>
+            <Link to="/">{t("gamedev_hero.link")}</Link>
           </p>
         </div>
 
@@ -59,4 +58,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default GameDevHero;

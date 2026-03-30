@@ -1,29 +1,39 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Contact = () => {
+const GameDevContact = () => {
     const { t } = useTranslation();
     const [message] = useState('');
 
+    const handleDiscord = () => {
+        const discord = "381868391671136258";
+        window.open(`https://discord.com/users/${discord}`, "_blank");
+    };
+
     const handleWhatsapp = () => {
-        const msg = encodeURIComponent(message || t("contact.whatsapp_msg"));
+        const msg = encodeURIComponent(message || t("gamedev_contact.whatsapp_msg"));
         const phone = "5527974002669";
         window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
     };
 
     const handleEmail = () => {
-        const msg = encodeURIComponent(message || t("contact.whatsapp_msg"));
+        const msg = encodeURIComponent(message || t("gamedev_contact.whatsapp_msg"));
         const email = "mw.dev.contact@proton.me";
-        const subject = encodeURIComponent(t("contact.email_subj"));
+        const subject = encodeURIComponent(t("gamedev_contact.email_subj"));
         window.open(`mailto:${email}?subject=${subject}&body=${msg}`, "_blank");
     };
 
     return (
         <div className="contact bg-[#1a2235] w-full py-20 flex justify-center">
             <div className="contact-content w-4/5 max-w-6xl flex flex-col items-center text-center">
-                <h1 className="text-3xl md:text-5xl font-extrabold text-[#47b8ec] mb-5">{t("contact.title")}</h1>
+                <h1 className="text-3xl md:text-5xl font-extrabold text-[#47b8ec] mb-5">{t("gamedev_contact.title")}</h1>
                 
-                <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed mb-10 text-center font-sans" dangerouslySetInnerHTML={{ __html: t("contact.desc") }} />
+                <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed mb-10 text-center font-sans" dangerouslySetInnerHTML={{ __html: t("gamedev_contact.desc") }} />
+
+                <button onClick={handleDiscord} className="btn w-full md:w-[480px] flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 bg-[#47b8ec] text-black/87 px-6 md:px-10 py-4 rounded-2xl font-bold no-underline transition-transform hover:scale-105 hover:bg-[#70c1e6] mb-5 cursor-pointer">
+                    <img src="./images/discord.svg" alt="Discord" className="w-8 h-auto block flex-shrink-0 brightness-0" />
+                    <span className='text-black text-[clamp(0.875rem,4vw,1.25rem)] md:whitespace-nowrap text-center md:text-left'>maxwellm8w</span>
+                </button>
 
                 <button onClick={handleWhatsapp} className="btn w-full md:w-[480px] flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 bg-[#47b8ec] text-black/87 px-6 md:px-10 py-4 rounded-2xl font-bold no-underline transition-transform hover:scale-105 hover:bg-[#70c1e6] mb-5 cursor-pointer">
                     <img src="./images/whatsapp.svg" alt="WhatsApp" className="w-8 h-auto block flex-shrink-0" />
@@ -40,4 +50,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default GameDevContact;
