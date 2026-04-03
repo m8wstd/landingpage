@@ -25,7 +25,7 @@ const GameDevHighlights = () => {
             />
           </div>
           <div className="highlight-item-text flex-1 text-left text-white/70">
-            <h2 className="text-xl md:text-3xl font-bold text-white/87 mb-4 mt-0">{t("gamedev_highlights.badapple_title")}</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-white/87 mb-4 mt-0">{t("gamedev_highlights.brainrot_title")}</h2>
             <p className="text-base md:text-xl leading-relaxed m-0 font-sans" dangerouslySetInnerHTML={{ __html: t("gamedev_highlights.brainrot_desc") }} />
           </div>
           <span className="inline-block mt-4 text-sm font-semibold text-purple-400 group-hover:text-purple-300 transition-colors">
