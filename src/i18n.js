@@ -34,6 +34,7 @@ const resources = {
         title: "Destaques",
         brainrot_title: "Brainrot League",
         brainrot_desc: "Jogo no Roblox onde o objetivo é treinar e cuidar de brainrots para batalhar contra outros brainrots.",
+        brainrot_details: "Ver detalhes técnicos",
         badapple_title: "BadApple!",
         badapple_desc: "Jogo em Scratch inspirado no video clipe da música \"BadApple!!\", onde programei e produzi a música e a arte."
       },
@@ -76,6 +77,7 @@ const resources = {
         title: "Highlights",
         brainrot_title: "Brainrot League",
         brainrot_desc: "A Roblox game where the goal is to train and care for brainrots to battle against other brainrots.",
+        brainrot_details: "See technical details",
         badapple_title: "BadApple!",
         badapple_desc: "A Scratch game inspired by the \"BadApple!!\" music video, where I programmed and produced both the music and art."
       },
