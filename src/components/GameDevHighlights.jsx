@@ -34,7 +34,21 @@ const GameDevHighlights = () => {
         </div>
         </Link>
 
-        
+        {/* Projeto de Extração (Extraction Corp) */}
+        <div className="highlight-item flex flex-col md:flex-row items-start gap-10 hover:scale-[1.02] transition-transform duration-300">
+          <div className="highlight-item-img w-full md:w-[300px] flex-shrink-0">
+            <img 
+              src="./images/round_system.jpg" 
+              alt={t("gamedev_highlights.extraction_title")} 
+              className="w-full h-auto rounded-lg shadow-lg block"
+            />
+          </div>
+          <div className="highlight-item-text flex-1 text-left text-white/70">
+            <h2 className="text-xl md:text-3xl font-bold text-white/87 mb-4 mt-0">{t("gamedev_highlights.extraction_title")}</h2>
+            <p className="text-base md:text-xl leading-relaxed m-0 font-sans" dangerouslySetInnerHTML={{ __html: t("gamedev_highlights.extraction_desc") }} />
+          </div>
+        </div>
+
         <div className="highlight-item flex flex-col md:flex-row items-start gap-10 hover:scale-[1.02] transition-transform duration-300">
           <div className="highlight-item-img w-full md:w-[300px] flex-shrink-0">
             <img 

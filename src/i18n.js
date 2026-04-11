@@ -36,7 +36,9 @@ const resources = {
         brainrot_desc: "Jogo no Roblox onde o objetivo é treinar e cuidar de brainrots para batalhar contra outros brainrots.",
         brainrot_details: "Ver detalhes técnicos",
         badapple_title: "BadApple!",
-        badapple_desc: "Jogo em Scratch inspirado no video clipe da música \"BadApple!!\", onde programei e produzi a música e a arte."
+        badapple_desc: "Jogo em Scratch inspirado no video clipe da música \"BadApple!!\", onde programei e produzi a música e a arte.",
+        extraction_title: "Round Game System",
+        extraction_desc: "Desenvolvimento de um sistema autônomo de ciclos de jogo com gerenciamento dinâmico de mapas e distribuição inteligente de funções. Inclui automação de ambiente, rastreamento de estatísticas em tempo real e otimização de performance."
       },
       gamedev_contact: {
         title: "Contate-me!",
@@ -79,7 +81,9 @@ const resources = {
         brainrot_desc: "A Roblox game where the goal is to train and care for brainrots to battle against other brainrots.",
         brainrot_details: "See technical details",
         badapple_title: "BadApple!",
-        badapple_desc: "A Scratch game inspired by the \"BadApple!!\" music video, where I programmed and produced both the music and art."
+        badapple_desc: "A Scratch game inspired by the \"BadApple!!\" music video, where I programmed and produced both the music and art.",
+        extraction_title: "Round Game System",
+        extraction_desc: "Development of an autonomous game cycle system featuring dynamic map management and intelligent role distribution. Includes environment automation, real-time stats tracking, and performance optimization via automated cleanup."
       },
       gamedev_contact: {
         title: "Contact me!",
