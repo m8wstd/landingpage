@@ -32,12 +32,6 @@ const Hero = () => {
         <h2 className="text-xl md:text-3xl font-bold text-[#47b8ec] mb-5 leading-tight">{t("hero.subtitle")}</h2>
         <p className="text-lg md:text-2xl text-white/70 mb-8 leading-relaxed" dangerouslySetInnerHTML={{ __html: t("hero.desc") }} />
 
-        <div>
-          <p className="text-sm md:text-sm text-white/70 mb-8 leading-relaxed underline">
-            <Link to="/gamedev">{t("hero.link")}</Link>
-          </p>
-        </div>
-
         <div className="social flex flex-wrap justify-center md:justify-start gap-4 items-center">
             <img src="./images/m8wlogo.svg" alt="M8W Logo" className="w-20 h-20 object-contain rounded-xl" />
             
@@ -47,9 +41,11 @@ const Hero = () => {
             <a href="https://github.com/m8wstd" target="_blank" className="p-1 bg-[#2a3344] hover:scale-125 transition-transform duration-200 rounded flex items-center justify-center w-14 h-14">
               <img src="./images/github.svg" alt="GitHub" className="w-10 h-10" />
             </a>
+            {/*
             <a href="https://www.instagram.com/maxwellm8w/" target="_blank" className="p-1 bg-[#2a3344] hover:scale-125 transition-transform duration-200 rounded flex items-center justify-center w-14 h-14">
               <img src="./images/instagram.svg" alt="Instagram" className="w-10 h-10" />
             </a>
+            */}
             <a href="https://www.linkedin.com/in/maxwellm8w/" target="_blank" className="p-1 bg-[#2a3344] hover:scale-125 transition-transform duration-200 rounded flex items-center justify-center w-14 h-14">
               <img src="./images/linkedin.svg" alt="Linkedin" className="w-10 h-10" />
             </a>

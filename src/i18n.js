@@ -6,9 +6,8 @@ const resources = {
   pt: {
     translation: {
       hero: {
-        subtitle: "Desenvolvedor Web",
-        desc: "<span class='text-white'>😃</span>Oi! Meu nome é Maxwell e sou desenvolvedor web.<br />Tenho trabalhado com aplicações web/mobile em react/react-native.<br/>Atualmente curso Sistemas de Informação na UVV (2025/1).",
-        link: "Clique aqui para ver sobre desenvolvimento de jogos!"
+        subtitle: "Desenvolvedor de Jogos",
+        desc: "<span class='text-white'>😃</span> Oi! Meu nome é Maxwell, sou Desenvolvedor de Jogos e Scripter de Roblox.<br/>Sou especializado em Luau e no desenvolvimento de jogos utilizando o Roblox Studio.<br/>Também tenho experiência com desenvolvimento web.<br/>Atualmente curso Sistemas de Informação na UVV (2025/1).",
       },
       highlights: {
         title: "Destaques",
@@ -25,35 +24,28 @@ const resources = {
         whatsapp_msg: "Olá Maxwell, gostaria de mais informações!",
         email_subj: "Contato via site"
       },
-      gamedev_hero: {
-        subtitle: "Desenvolvedor de Jogos",
-        desc: "<span class='text-white'>🎮</span> Oi! Meu nome é Maxwell, sou Desenvolvedor de Jogos e Scripter de Roblox.<br/>Sou especializado em Luau e no desenvolvimento de jogos utilizando o Roblox Studio.<br/>Tenho experiência com fluxos de trabalho profissionais envolvendo Rojo, VS Code, Git e GitHub para controle de versão, além de saber usar ProfileService e ReplicaService para manipulação segura de dados, e frameworks como Knit.<br/>Atualmente curso Sistemas de Informação na UVV (2025/1).",
-        link: "Clique aqui para ver sobre Desenvolvimento Web!"
-      },
       gamedev_highlights: {
         title: "Destaques",
         brainrot_title: "Brainrot League",
         brainrot_desc: "Jogo no Roblox onde o objetivo é treinar e cuidar de brainrots para batalhar contra outros brainrots.",
         brainrot_details: "Ver detalhes técnicos",
         badapple_title: "BadApple!",
+        badapple_details: "Jogue",
         badapple_desc: "Jogo em Scratch inspirado no video clipe da música \"BadApple!!\", onde programei e produzi a música e a arte.",
         extraction_title: "Round Game System",
-        extraction_desc: "Desenvolvimento de um sistema autônomo de ciclos de jogo com gerenciamento dinâmico de mapas e distribuição inteligente de funções. Inclui automação de ambiente, rastreamento de estatísticas em tempo real e otimização de performance."
+        extraction_desc: "Desenvolvimento de um sistema autônomo de ciclos de jogo com gerenciamento dinâmico de mapas e distribuição inteligente de funções. Inclui automação de ambiente, rastreamento de estatísticas em tempo real e otimização de performance.",
+        greenfootpokemon_title: "Greenfoot Pokémon Battle",
+        greenfootpokemon_desc: "Uma adaptação do sistema de batalha de Pokémon da primeira geração para o Greenfoot, feita em Java (e orientada a objetos). Tem cerca de 40 Pokémon e 80 movimentos.",
+        greenfootpokemon_details: "Ver vídeo",
       },
-      gamedev_contact: {
-        title: "Contate-me!",
-        desc: "Quer desenvolver um jogo incrível ou precisa de ajuda em seu projeto?<br/>É só me mandar mensagem!",
-        whatsapp_msg: "Olá Maxwell, vi seu portfólio de Game Dev e gostaria de falar com você!",
-        email_subj: "Contato via site - Game Dev"
-      }
     }
   },
   en: {
     translation: {
       hero: {
-        subtitle: "Web Developer",
-        desc: "<span class='text-white'>😃</span>Hi! I'm Maxwell, a Web Developer.<br />I specialize in building performant web and mobile applications using React and React Native.<br/>Currently studying Computer Information Systems at UVV (2025/1).",
-        link: "Click here to see my Game Development portfolio!"
+        subtitle: "Game Developer",
+        desc: "<span class='text-white'>😃</span>Hey! I'm Maxwell, a Game Developer & Roblox Scripter.<br />I specialize in Luau and game development using Roblox Studio.<br/>I also have experience in web development.<br/>Currently studying Computer Information Systems at UVV (2025/1).",
+        link: "Click here to see my Web Development portfolio!"
       },
       highlights: {
         title: "Highlights",
@@ -70,27 +62,20 @@ const resources = {
         whatsapp_msg: "Hi Maxwell, I'd like more information!",
         email_subj: "Contact via website"
       },
-      gamedev_hero: {
-        subtitle: "Game Developer",
-        desc: "<span class='text-white'>🎮</span>Hey! I'm Maxwell, a Game Developer & Roblox Scripter.<br />I specialize in Luau and game development using Roblox Studio.<br/>I have experience with professional workflows involving Rojo, VS Code, Git, and GitHub for version control, as well as ProfileService and ReplicaService for secure data handling, and frameworks like Knit.<br/>Currently studying Computer Information Systems at UVV (2025/1).",
-        link: "Click here to see my Web Development portfolio!"
-      },
       gamedev_highlights: {
         title: "Highlights",
         brainrot_title: "Brainrot League",
         brainrot_desc: "A Roblox game where the goal is to train and care for brainrots to battle against other brainrots.",
         brainrot_details: "See technical details",
         badapple_title: "BadApple!",
+        badapple_details: "Play",
         badapple_desc: "A Scratch game inspired by the \"BadApple!!\" music video, where I programmed and produced both the music and art.",
         extraction_title: "Round Game System",
-        extraction_desc: "Development of an autonomous game cycle system featuring dynamic map management and intelligent role distribution. Includes environment automation, real-time stats tracking, and performance optimization via automated cleanup."
+        extraction_desc: "Development of an autonomous game cycle system featuring dynamic map management and intelligent role distribution. Includes environment automation, real-time stats tracking, and performance optimization via automated cleanup.",
+        greenfootpokemon_title: "Greenfoot Pokémon Battle",
+        greenfootpokemon_desc: "An adaptation of the first-generation Pokémon battle system for Greenfoot, made in Java (and object-oriented). It has around 40 Pokémon and 80 moves.",
+        greenfootpokemon_details: "Watch video",
       },
-      gamedev_contact: {
-        title: "Contact me!",
-        desc: "Want to develop an amazing game or need help with a project?<br/>Just send me a message!",
-        whatsapp_msg: "Hi Maxwell, I saw your Game Dev portfolio and would love to chat!",
-        email_subj: "Contact via website - Game Dev"
-      }
     }
   }
 };
