@@ -6,8 +6,8 @@ const resources = {
   pt: {
     translation: {
       hero: {
-        subtitle: "Desenvolvedor de Jogos",
-        desc: "<span class='text-white'>😃</span> Oi! Meu nome é Maxwell, sou Desenvolvedor de Jogos e Scripter de Roblox.<br/>Sou especializado em Luau e no desenvolvimento de jogos utilizando o Roblox Studio.<br/>Também tenho experiência com desenvolvimento web.<br/>Atualmente curso Sistemas de Informação na UVV (2025/1).",
+        subtitle: "Desenvolvedor de Software",
+        desc: "<span class='text-white'>😃</span> Oi! Meu nome é Maxwell, sou um Desenvolvedor de Software especializado no desenvolvimento de jogos utilizando o Roblox Studio.<br/>Também tenho experiência com desenvolvimento web e programação no geral.<br/>Atualmente curso Sistemas de Informação na UVV (2025/1).",
       },
       highlights: {
         title: "Destaques",
@@ -23,6 +23,10 @@ const resources = {
         terminallua_title: "Terminal Bancário em Lua",
         terminallua_desc:
           "Um projeto de um curso feito em lua puro, onde o objetivo foi fazer uma simulação de terminal bancário com uma série de restrições de segurança.",
+        luacourse_title: "Curso de Programação Lua",
+        luacourse_desc:
+          "Capacitação profissional no desenvolvimento com a linguagem Lua nativa e na aplicação prática de ferramentas e motores de jogos como Roblox Studio e LÖVE2D.",
+        luacourse_details: "Veja o certificado",
       },
       contact: {
         title: "Contate-me!",
@@ -53,9 +57,8 @@ const resources = {
   en: {
     translation: {
       hero: {
-        subtitle: "Game Developer",
-        desc: "<span class='text-white'>😃</span>Hey! I'm Maxwell, a Game Developer & Roblox Scripter.<br />I specialize in Luau and game development using Roblox Studio.<br/>I also have experience in web development.<br/>Currently studying Computer Information Systems at UVV (2025/1).",
-        link: "Click here to see my Web Development portfolio!",
+        subtitle: "Software Developer",
+        desc: "<span class='text-white'>😃</span>Hey! I'm Maxwell, a Software Developer specializing in game development using Roblox Studio.<br/>I also have experience in web development and programming in general.<br/>I am currently pursuing a degree in Information Systems at UVV (2025 – Present).",
       },
       highlights: {
         title: "Highlights",
@@ -71,6 +74,10 @@ const resources = {
         terminallua_title: "Lua Bank Terminal",
         terminallua_desc:
           "A project from a course built in pure Lua, where the goal was to create a bank terminal simulation with a series of security restrictions.",
+        luacourse_title: "Lua Programming Course",
+        luacourse_desc:
+          "Professional training in pure Lua development, focusing on the practical application of game engines and tools such as Roblox Studio and LÖVE2D.",
+        luacourse_details: "View the certificate",
       },
       contact: {
         title: "Contact me!",

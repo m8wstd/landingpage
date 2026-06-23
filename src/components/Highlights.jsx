@@ -154,6 +154,41 @@ const Highlights = () => {
           </div>
         </Link>
 
+        {/* CURSO DE PROGRAMAÇÃO EM LUA */}
+        <a
+          href="./images/UC-403c6679-ead1-4e58-956c-245520259164.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", display: "block" }}
+          className="highlight-item flex flex-col md:flex-row items-start gap-10 hover:scale-[1.02] transition-transform duration-300 cursor-pointer group"
+        >
+          <div className="highlight-item flex flex-col md:flex-row items-start gap-10 hover:scale-[1.02] transition-transform duration-300">
+            <div className="highlight-item-img w-full md:w-[300px] flex-shrink-0">
+              <img
+                src="./images/lua-programming-language.jpg"
+                alt="Gif Jogo BadApple"
+                className="w-full h-auto rounded-lg shadow-lg block"
+              />
+            </div>
+
+            <div className="highlight-item-text flex-1 text-left text-white/70">
+              <h2 className="text-xl md:text-3xl font-bold text-white/87 mb-4 mt-0">
+                {t("highlights.luacourse_title")}
+              </h2>
+              <p
+                className="text-base md:text-xl leading-relaxed m-0 font-sans"
+                dangerouslySetInnerHTML={{
+                  __html: t("highlights.luacourse_desc"),
+                }}
+              />
+            </div>
+
+            <span className="inline-block mt-4 text-sm font-semibold text-purple-400 group-hover:text-purple-300 transition-colors">
+              {t("highlights.luacourse_details")} →
+            </span>
+          </div>
+        </a>
+
         {/* TERMINAL BANCÁRIO EM LUA */}
         <div className="highlight-item flex flex-col md:flex-row items-start gap-10 hover:scale-[1.02] transition-transform duration-300">
           <div className="highlight-item-img w-full md:w-[300px] flex-shrink-0">
