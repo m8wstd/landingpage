@@ -27,6 +27,10 @@ const resources = {
         luacourse_desc:
           "Capacitação profissional no desenvolvimento com a linguagem Lua nativa e na aplicação prática de ferramentas e motores de jogos como Roblox Studio e LÖVE2D.",
         luacourse_details: "Veja o certificado",
+        kolosclicker_title: "Kolos Clicker (DEMO)",
+        kolosclicker_desc:
+          "Um jogo clicker onde você tem que clicar pra conseguir construir o Kolosverso e descobrir novos Kolos.<br/>Nesse projeto, eu programei toda a mecânica da demo, além de ter produzido a interface gráfica, as artes visuais e os efeitos sonoros.",
+        kolosclicker_details: "Detalhes",
       },
       contact: {
         title: "Contate-me!",
@@ -78,6 +82,10 @@ const resources = {
         luacourse_desc:
           "Professional training in pure Lua development, focusing on the practical application of game engines and tools such as Roblox Studio and LÖVE2D.",
         luacourse_details: "View the certificate",
+        kolosclicker_title: "Kolos Clicker (DEMO)",
+        kolosclicker_desc:
+          "A clicker game where you have to click to build the Kolosverse and discover new Kolos.<br/>For this project, I programmed all the demo mechanics and created the graphical interface, visual art, and sound effects.",
+        kolosclicker_details: "Details",
       },
       contact: {
         title: "Contact me!",

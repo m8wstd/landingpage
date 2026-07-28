@@ -535,7 +535,7 @@ const BrainrotLeaguePage = () => {
       hint: "Clique em cada card para ver os detalhes técnicos",
       roster: "Roster de Brainrots",
       roster_sub: "50 criaturas em 5 raridades e 10 elementos",
-      cta: "Precisa de um Scripter?",
+      cta: "Precisa de um desenvolvedor?",
       cta_desc:
         "Se você busca um desenvolvedor com código limpo, arquitetura escalável e workflow profissional — fale comigo.",
       cta_btn: "Entrar em Contato",
@@ -558,7 +558,7 @@ const BrainrotLeaguePage = () => {
       hint: "Click each card to expand technical details",
       roster: "Brainrot Roster",
       roster_sub: "50 creatures across 5 rarities and 10 elements",
-      cta: "Need a Scripter?",
+      cta: "Need a developer?",
       cta_desc:
         "If you need a developer with clean code, scalable architecture and professional workflow — let's talk.",
       cta_btn: "Get in Touch",
@@ -690,7 +690,7 @@ const BrainrotLeaguePage = () => {
             {S.cta_desc}
           </p>
           <Link
-            to="/gamedev"
+            to="/"
             className="btn w-full md:w-[480px] flex items-center justify-center gap-4 bg-[#47b8ec] text-black font-bold px-10 py-4 rounded-2xl no-underline transition-transform hover:scale-105 hover:bg-[#70c1e6]"
           >
             {S.cta_btn} →

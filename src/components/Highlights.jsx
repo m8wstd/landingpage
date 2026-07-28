@@ -33,6 +33,37 @@ const Highlights = () => {
           </div>
         </div>
 
+        {/* KOLOS CLICKER */}
+        <Link
+          to="/kolos-clicker"
+          style={{ textDecoration: "none", display: "block" }}
+          className="highlight-item flex flex-col md:flex-row items-start gap-10 hover:scale-[1.02] transition-transform duration-300 cursor-pointer group"
+        >
+          <div className="highlight-item flex flex-col md:flex-row items-start gap-10 hover:scale-[1.02] transition-transform duration-300">
+            <div className="highlight-item-img w-full md:w-[300px] flex-shrink-0">
+              <img
+                src="./images/kolos/thumb.png"
+                alt="Thumbnail Jogo Kolos Clicker"
+                className="w-full h-auto rounded-lg shadow-lg block"
+              />
+            </div>
+            <div className="highlight-item-text flex-1 text-left text-white/70">
+              <h2 className="text-xl md:text-3xl font-bold text-white/87 mb-4 mt-0">
+                {t("highlights.kolosclicker_title")}
+              </h2>
+              <p
+                className="text-base md:text-xl leading-relaxed m-0 font-sans"
+                dangerouslySetInnerHTML={{
+                  __html: t("highlights.kolosclicker_desc"),
+                }}
+              />
+            </div>
+            <span className="inline-block mt-4 text-sm font-semibold text-purple-400 group-hover:text-purple-300 transition-colors">
+              {t("highlights.kolosclicker_details")} →
+            </span>
+          </div>
+        </Link>
+
         {/* BRAINROT LEAGUE */}
         <Link
           to="/brainrot-league"
