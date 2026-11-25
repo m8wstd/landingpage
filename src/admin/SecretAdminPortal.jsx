@@ -358,6 +358,48 @@ export const SecretAdminPortal = () => {
     }
   };
 
+  // Exportar tudo para um arquivo de código para commitar direto no projeto
+  const handleExportCode = () => {
+    const fullBackup = {
+      projects,
+      siteConfig
+    };
+    const blob = new Blob([JSON.stringify(fullBackup, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = "portfolio_database.json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    showNotification('Backup do banco de dados exportado com sucesso!');
+  };
+
+  // Importar banco de dados de arquivo JSON
+  const handleImportCode = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const parsed = JSON.parse(event.target.result);
+        if (parsed.projects && Array.isArray(parsed.projects)) {
+          saveProjects(parsed.projects);
+          setProjects(parsed.projects);
+        }
+        if (parsed.siteConfig) {
+          saveSiteConfig(parsed.siteConfig);
+          setSiteConfig(parsed.siteConfig);
+        }
+        showNotification('Dados importados com sucesso!');
+      } catch (err) {
+        alert('Erro ao importar arquivo JSON: ' + err.message);
+      }
+    };
+    reader.readAsText(file);
+  };
+
   // ─────────────────────────────────────────────────────────────────────────────
   // TELA DE LOGIN
   // ─────────────────────────────────────────────────────────────────────────────
@@ -1469,7 +1511,49 @@ export const SecretAdminPortal = () => {
               >
                 Restaurar Padrões de Fábrica
               </button>
+            {/* Export Data */}
+            <div className="bg-[#141c2c] border border-white/10 rounded-3xl p-6 sm:p-8 max-w-xl">
+              <h3 className="text-lg font-bold font-title text-[#47b8ec] mb-1">📤 Exportar Dados</h3>
+              <p className="text-xs text-white/50 mb-4">
+                Baixa um arquivo <code className="bg-white/10 px-1 rounded text-white/70">portfolio_database.json</code> com todos os seus projetos, textos e configurações atuais.
+              </p>
+              <button
+                onClick={handleExportCode}
+                className="px-4 py-2 rounded-xl bg-[#47b8ec]/15 hover:bg-[#47b8ec]/25 text-[#47b8ec] border border-[#47b8ec]/30 text-xs font-semibold transition-all cursor-pointer"
+              >
+                Baixar portfolio_database.json
+              </button>
             </div>
+
+            {/* Import Data */}
+            <div className="bg-[#141c2c] border border-white/10 rounded-3xl p-6 sm:p-8 max-w-xl">
+              <h3 className="text-lg font-bold font-title text-emerald-400 mb-1">📥 Importar Dados</h3>
+              <p className="text-xs text-white/50 mb-4">
+                Restaura todos os dados a partir de um arquivo <code className="bg-white/10 px-1 rounded text-white/70">portfolio_database.json</code> exportado anteriormente. Útil para transferir dados entre ambientes (ex: localhost → site publicado).
+              </p>
+              <label className="inline-block px-4 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/30 text-xs font-semibold transition-all cursor-pointer">
+                Selecionar arquivo JSON…
+                <input
+                  type="file"
+                  accept=".json"
+                  className="hidden"
+                  onChange={handleImportCode}
+                />
+              </label>
+            </div>
+
+            {/* Deploy tip */}
+            <div className="bg-[#141c2c] border border-white/10 rounded-3xl p-6 sm:p-8 max-w-xl">
+              <h3 className="text-lg font-bold font-title text-amber-400 mb-2">🚀 Como levar seus dados pro deploy?</h3>
+              <ol className="text-xs text-white/60 space-y-2 list-decimal list-inside">
+                <li>Clique em <span className="text-[#47b8ec] font-semibold">Exportar Dados</span> aqui no localhost e salve o arquivo JSON.</li>
+                <li>Faça o deploy normalmente: <code className="bg-white/10 px-1 rounded text-white/70">npm run build && npm run deploy</code></li>
+                <li>Abra o site publicado, vá para o painel admin (<code className="bg-white/10 px-1 rounded text-white/70">/#/_vault_master_m8w</code>) e faça login.</li>
+                <li>Vá em <span className="text-amber-300 font-semibold">Segurança → Importar Dados</span> e selecione o arquivo JSON baixado.</li>
+                <li>Pronto! Seus dados estarão no site publicado. 🎉</li>
+              </ol>
+            </div>
+          </div>
           </div>
         )}
       </div>
