@@ -3,9 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="/landingpage/images/m8wlogo.svg" type="image/svg+xml" />
+  <link rel="icon" href="/landingpage/images/m8wlogo.png" type="image/png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maxwell M8W</title>
+  <meta http-equiv="refresh" content="0; url=https://maxwellm8w.vercel.app/" />
+  <script>
+    (function () {
+      var path = window.location.pathname.replace(/^\/landingpage/, '') || '/';
+      var target = 'https://maxwellm8w.vercel.app' + path + window.location.search + window.location.hash;
+      window.location.replace(target);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
