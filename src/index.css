@@ -1,3 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Quicksand:wght@500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --brand: #47b8ec;
+  --bg-main: #141c2c;
+  --bg-card: rgba(42, 51, 68, 0.45);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141c2c;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-title {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+/* Brittany Chiang spotlight torch effect */
+.spotlight-container {
+  position: relative;
+}
+
+.mouse-glow {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  transition: opacity 0.3s;
+  background: radial-gradient(
+    650px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
+    rgba(71, 184, 236, 0.08),
+    transparent 80%
+  );
+}
+
+/* Glass-card refinado com o tom do seu site */
+.portfolio-card {
+  position: relative;
+  background: rgba(34, 44, 66, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-card:hover {
+  background: rgba(42, 51, 68, 0.6);
+  border-color: rgba(71, 184, 236, 0.35);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Nav Indicator like Brittany Chiang */
+.nav-indicator {
+  display: inline-block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover .nav-indicator,
+.nav-link.active .nav-indicator {
+  width: 3rem;
+  background-color: #47b8ec;
+}
+
+.nav-link:hover .nav-text,
+.nav-link.active .nav-text {
+  color: #47b8ec;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #141c2c;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3344;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #47b8ec;
+}
