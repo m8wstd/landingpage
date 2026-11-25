@@ -6,7 +6,7 @@ const SITE_CONFIG_STORAGE_KEY = 'm8w_portfolio_site_config_v1';
 const AUTH_KEY = 'm8w_admin_session_token';
 const CUSTOM_PASS_KEY = 'm8w_admin_custom_password';
 
-export const DEFAULT_ADMIN_PASSWORD = 'm8w@2025';
+export const DEFAULT_ADMIN_PASSWORD = 'sNJ^s7zbuU#8LSo^V8STG2G&JGhqgiMV';
 
 export function getAdminPassword() {
   return localStorage.getItem(CUSTOM_PASS_KEY) || DEFAULT_ADMIN_PASSWORD;
@@ -48,9 +48,19 @@ export function loadProjects() {
   return initialProjects;
 }
 
+function syncToSourceFiles(payload) {
+  if (!import.meta.env.DEV) return;
+  fetch(`${import.meta.env.BASE_URL}__save-db`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  }).catch((err) => console.error('Failed to sync to source files:', err));
+}
+
 export function saveProjects(projects) {
   try {
     localStorage.setItem(PROJECTS_STORAGE_KEY, JSON.stringify(projects));
+    syncToSourceFiles({ projects });
     window.dispatchEvent(new Event('portfolio_data_updated'));
     window.dispatchEvent(new Event('portfolio_projects_updated'));
     return true;
@@ -160,6 +170,7 @@ export function loadSiteConfig() {
 export function saveSiteConfig(newConfig) {
   try {
     localStorage.setItem(SITE_CONFIG_STORAGE_KEY, JSON.stringify(newConfig));
+    syncToSourceFiles({ siteConfig: newConfig });
     window.dispatchEvent(new Event('portfolio_data_updated'));
     return true;
   } catch (err) {
